@@ -1,0 +1,10 @@
+version: '3'
+services:
+  python3:
+    container_name: 'ここにコンテナネームを入れる'
+    # restart: always
+    build: build/.
+    tty: true
+    working_dir: '/root/usr/src'
+    volumes:
+      - './src:/root/usr/src'
